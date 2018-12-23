@@ -1,0 +1,352 @@
+\documentclass[10pt]{article}
+
+
+\newcommand{\onearrow}[3]{\mbox{$#1 \stackrel{#2}{\longrightarrow} #3$}}
+\newcommand{\calC}{\mbox{${\cal C}\ $}}
+\newcommand{\calD}{\mbox{${\cal D}\ $}}
+\newcommand{\calG}{\mbox{${\cal G}\ $}}
+\newcommand{\calH}{\mbox{${\cal H}\ $}}
+\newcommand{\calI}{\mbox{${\cal I}\ $}}
+\newcommand{\calS}{\mbox{${\cal S}\ $}}
+\newcommand{\functor}[3]{\mbox{${\cal #1} \stackrel{#2}{\rightarrow}{\cal #3}$}}
+\newcommand{\mapto}[2]{\mbox{$#1 \mapsto #2$}}
+\newcommand{\maptob}[3]{\mbox{$(#1): #2 \mapsto #3$}}
+
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsmath,amscd}
+\usepackage[all,cmtip]{xy}
+\theoremstyle{remark}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+
+\begin{document}
+
+\section{Preliminaries}
+
+\begin{definition}{$\mathbb{P}_{+} (S)$}
+$$
+\mathbb{P}_{+} (S) = \{ A \subseteq S \, | \, A \neq \emptyset \}
+$$
+\end{definition}
+
+\begin{definition}[\textbf{Ordered power set} ($\mathbb{O}_+(S)$)]
+$$
+\mathbb{O}_+(S) = \coprod_{n \geq 1} S^{n}
+$$
+\end{definition}
+
+\begin{definition}[\textbf{Hom Set Functor}]
+Let \calC and \calD be categories. Let \onearrow{\calC}{F}{\calD} be a functor, and construct the functor  \onearrow{\mathbf{Sets}^{\calD}}{R_A}{\mathbf{Sets}^{\calC}} as follows:
+
+\xymatrix{
+                          & & & & G \circ A \ar@{(.>}[d] \\
+\calC \ar[d]_A & C \ar[r]^{f} & C' & & \mathbf{Sets}^{\calC} \\
+\calD                & A(C) \ar[r]^{A(f)} & A(C') & & \mathbf{Sets}^{\calD} \ar[u]_{R_A} \\
+                         & & & & G \ar@{(.>}[u] \ar@{|.>}@/^2.5pc/[uuu]|{R_A(G)}
+}
+
+\xymatrix{
+\onearrow{\calC}{F}{\mathbf{Sets}} \ar[d]_{\eta}^{\bullet} \\
+\onearrow{\calD}{G}{\mathbf{Sets}} \\
+}
+
+\end{definition}
+
+\section{Graphs, Hypergraphs and Simplicial Sets}
+
+\subsection{Graphs}
+
+\begin{definition}[\textbf{Directed Graph}]
+A \emph{directed graph} is a triple $X=(X_E, X_V, f)$ where \onearrow{X_E}{f}{X_V \times X_V}. The function $f$
+is called the \emph{constituent function}.
+\end{definition}
+
+\begin{remark}[Directed Graph Representation]
+A directed graph can be written
+$\xymatrix{
+     X_E \ar@<0.6ex>[r]^-{f_0} \ar@<-0.6ex>[r]_-{f_1} & X_V
+}$
+or equivalently as
+$\xymatrix{
+     X_E \ar[r]^-{f} & X_V \times X_V
+}$
+We will often drop the $X$ when it is understood from the context, as in
+$\xymatrix{
+     E \ar@<0.6ex>[r]^-{f_0} \ar@<-0.6ex>[r]_-{f_1} & V
+}$
+or equivalently as
+$\xymatrix{
+     E \ar[r]^-{f} & V \times V
+}$
+\end{remark}
+
+\begin{definition}[Directed Graph Morphism]
+Let $X=\onearrow{X_E}{f}{X_V \times X_V}$ and $Y=\onearrow{Y_E}{g}{\mathbb{O}_{+} (Y_V)}$ be directed graphs. A \emph{directed graph morphism} is a pair of functions \onearrow{X_E}{a}{Y_E} and \onearrow{X_V}{b}{Y_V} such that the following diagram commutes:
+$$\xymatrix{
+E \ar[d]^f & & E  \ar@<-0.5ex>[d]_{f_1} \ar@<0.5ex>[d]^{f_0} & & X_E  \ar[d]^f \ar[r]^-a  & Y_E  \ar[d]^g \\ 
+V \times V & &V & &  X_V \times X_V   \ar[r]^-b       & Y_V \times Y_V
+}$$
+\end{definition}
+
+\begin{definition}[\textbf{Index category for graphs} ($\Delta_G$)]
+The index category for graphs consists of:
+\begin{description}
+\item [objects] $V$ and $E_2$
+\item [arrows] \onearrow{V}{d_0}{E_2} and \onearrow{V}{d_1}{E_2}
+\end{description}
+
+This is diagramed as:
+$\xymatrix{
+     E_2 \ar@<1ex>[r]|-{d_0} \ar@<-1ex>[r]|-{d_1} & V
+     }$
+\end{definition}
+
+\begin{remark}
+$\Delta_G^{\text{op}}$ denotes the opposite category of $\Delta_G$.
+The category $\Delta_G^{\text{op}}$ is diagramed as:
+$\xymatrix{
+     E_2 & V \ar@<1ex>[l]|-{d_0} \ar@<-1ex>[l]|-{d_1}
+     }$
+\end{remark}
+
+\begin{proposition}[Categorical definition of graphs]
+Let $\calG = \mathbf{Sets}^{\Delta_G^{\text{op}}}$ be the category of graphs.
+A functor \onearrow{\Delta_G^{\text{op}}}{F}{\mathbf{Sets}} determines two sets $F(V)$ and $F(E_2)$, and functions
+$\xymatrix{
+     F(E_2) \ar@<1ex>[r]|-{d_0} \ar@<-1ex>[r]|-{d_1} & F(V)
+     } $ which is the data that defines a graph. The opposite category determines the data is
+$\xymatrix{
+     F(E_2) & F(V) \ar@<1ex>[l]|-{d_0} \ar@<-1ex>[l]|-{d_1}
+     }$ which is equivalent to
+$\xymatrix{
+     F(E_2) & F(V) \times F(V) \ar[l]|-{d}
+     }$
+so a natural transformation \onearrow{F}{\eta}{F'} determines functions \onearrow{F(V)}{\eta_V}{F'(V)} and \onearrow{F(E_2)}{\eta_{E_2}}{F(E_2)}.
+$$
+\xymatrix{ 
+F(E_2) \ar@<1ex>[rr]|-{F(d_0)} \ar@<-1ex>[rr]|-{F(d_1)} \ar[d]_{\eta_{E_2}} & & F(V) \ar[d]^{\eta_V} & & F(E_2) \ar[r]^-{F(d)}  \ar[d]_{\eta_{E_2}} & F(V) \times F(V) \ar[d]^{\eta_V \times \eta_V} \\
+F'(E_2) \ar@<1ex>[rr]|-{F'(d_0)} \ar@<-1ex>[rr]|-{F'(d_1)} & & F'(V) & & F'(E_2) \ar[r]^-{F'(d)} & F'(V) \times F'(V)
+}
+$$
+\end{proposition}
+
+%%----------------------------------------------------------------------------------------------------------
+\subsection{Hypergraphs}
+
+
+\begin{definition}[\textbf{Directed Hypergraph}]
+A \emph{directed hypergraph} is a triple $X=(X_E, X_V, f)$ where \onearrow{X_E}{f}{\mathbb{O}_{+} (X_V)}.
+\end{definition}
+
+\begin{remark}
+Equivalently, we can take $f$ to be a collection of functions $\{ \onearrow{E}{f_i}{V^i} \, | \, i \in \mathbb{N}\}$. 
+\end{remark}
+
+\begin{definition}[\textbf{Order of an edge in a hypergraph}]
+The \emph{order} of an edge $e$, written $|e|$ is defined as the cardinality of $f(e)$.
+\end{definition}
+
+\begin{definition}[\textbf{Undirected Hypergraph}]
+An \emph{undirected hypergraph} is a triple $X=(X_E, X_V, f)$ where \onearrow{X_E}{f}{\mathbb{P}_{+} (X_V)}.
+\end{definition}
+
+\begin{definition}[$k$-\textbf{Uniform Hypergraph}]
+A $k$-\emph{uniform hypergraph} is a hypergraph $X=(X_E, X_V, f)$ where $\forall e \in X_E \, . \, |e| = k$.
+\end{definition}
+
+\begin{definition}[\textbf{Directed Hypergraph Morphism}]
+Let $X=\onearrow{X_E}{f}{\mathbb{O}_{+} (X_V)}$ and \onearrow{Y_E}{g}{\mathbb{O}_{+} (Y_V)}
+be directed hypergraphs. A \emph{directed hypergraph morphism} is a pair of
+functions \onearrow{X_E}{a}{Y_E} and \onearrow{X_V}{b}{Y_V} such that the following diagram commutes:
+$$
+\xymatrix {
+X_E      \ar[r]^-{f} \ar[d]_{a}   &     {\mathbb{O}_{+} (X_V) = \coprod_{n \geq 1} X_V^n} \ar[d]^{b} \\
+Y_E      \ar[r]^-{g}     &  \mathbb{O}_{+} (Y_V) = \coprod_{n \geq 1} Y_V^n
+}
+$$
+\end{definition}
+
+\begin{definition}[\textbf{Undirected Hypergraph Morphism}]
+Let $X=\onearrow{X_E}{f}{\mathbb{P}_{+} (X_V)}$ and \onearrow{Y_E}{g}{\mathbb{P}_{+} (Y_V)} be directed hypergraphs. A \emph{undirected hypergraph morphism} is a pair of functions \onearrow{X_E}{a}{Y_E} and \onearrow{X_V}{b}{Y_V} such that the following diagram commutes:
+$$
+\xymatrix{
+X_E  \ar[d]^a \ar[r]^f  & \mathbb{P}_{+} (X_V) \ar[d]^b \\ 
+Y_E          \ar[r]^g       & \mathbb{P}_{+} (Y_V)
+}
+$$
+\end{definition}
+
+\begin{definition}[\textbf{Index category $\Delta_H$ for directed hypergraphs}]
+The collections of objects of $\Delta_H$ is $\{V, E_1, E_2, E_3, \ldots \}$, and the arrows of $\Delta_H$ is $\bigcup_{n \in \mathbb{N}} \{ \onearrow{V}{v_i^n}{E_n} \, | \, 0 \leq i \leq n \}$.
+\end{definition}
+
+\begin{proposition}[\textbf{Category \calH of directed hypergraphs}]
+$\calH = \mathbf{Sets}^{\Delta_H^{\text{op}}} = \Delta_H^{\text{op}} \rightarrow \mathbf{Sets}$. The vertex set is $F_V = F(V)$. The hyperedge set is $F_E = \coprod_{n \in \mathbb{N}} {F(E_n)}$. The constituent functions are $\{ \onearrow{F(E_n)}{F(V_i)}{F(V)}\}_{n \in \mathbb{N}}$. Let \onearrow{\Delta_H^{\text{op}}}{F}{\mathbf{Sets}} be an element of \calH and \onearrow{\Delta_H^{\text{op}}}{F'}{\mathbf{Sets}} be another element of \calH.
+$$
+\xymatrix{
+F  \ar[d]^{\eta} & {\mathbb{O}_{+} (E) = \coprod_{n}E_n} \ar[r]^-{v_i^n} \ar[d]^{\eta_E} & V \ar[d]^{\eta_V} \\
+F'                      & {\mathbb{O}_{+} (E') = \coprod_{n}E'_n} \ar[r]^-{{v'}_i^n}                         & V' \\
+}
+$$
+\end{proposition}
+
+%%----------------------------------------------------------------------------------------------------------
+\subsection{Semi-Simplicial Sets}
+
+\begin{definition}[\textbf{Semi-Simplicial Set [Set theoretic version)}]
+A \emph{semi-simplicial set} is a sequence $[X_n]_{n \in \mathbb{N}}$ of sets together with a collection $\{ \onearrow{X_n}{d_i^n}{X_{n-1}} \, | \, 0 \leq i \leq n \}$ of functions for each $n$ satisfying the identity
+$$
+d_i^n \circ d_j^{n+1} = d_{j-1}^n \circ d_i^{n+1}
+$$
+\end{definition}
+
+\begin{remark}[Diagram for Simplicial Sets]
+The set $X_n$ is called the set of $n$-\emph{simplices} of $X$. The function \onearrow{X_n}{d_i^n}{X_{n-1}} is often abbreviated $d_i$. The set of functions $d_i$ determines the lower dimensional simplices that form the boundary of the higher dimensional simplex.
+$$ \xymatrix{
+\ldots \ar@<1.25ex>[r]  \ar@<0.5ex>[r]  \ar@<-0.25ex>[r]  \ar@<-1.0ex>[r] &
+     X_2 \ar@<0.75ex>[r]  \ar[r] \ar@<-0.75ex>[r] &
+     X_1 \ar@<0.4ex>[r] \ar@<-0.4ex>[r] &
+     X_0
+} $$
+\end{remark}
+
+\begin{definition}[\textbf{1-skeleton}]
+Let $X = 
+\xymatrix{
+\ldots \ar@<1.25ex>[r]  \ar@<0.5ex>[r]  \ar@<-0.25ex>[r]  \ar@<-1.0ex>[r] &
+     X_2 \ar@<0.75ex>[r]  \ar[r] \ar@<-0.75ex>[r] &
+     X_1 \ar@<0.4ex>[r]^{d_1} \ar@<-0.4ex>[r]_{d_0} &
+     X_0
+}
+$ be a semi-simplicial set. Then the \emph{1-skeleton} of $X$ is the directed graph
+$\xymatrix{
+     X_1 \ar@<0.6ex>[r]^-{d_1} \ar@<-0.6ex>[r]_-{d_0} & X_0
+}$
+or equivalently
+$\xymatrix{
+     X_1 \ar[r]^-{d_1 \times d_0} & X_0 \times X_0
+}$. This amounts to forgetting all the higher order simplicial sets and their associated functions.
+\end{definition}
+
+\begin{definition}[\textbf{morphism of semi-simplicial sets}]
+A \emph{morphism of semi-simplicial sets} \onearrow{X}{\eta}{Y} is a collection of maps $\{ \onearrow{X_n}{\eta_n}{Y_n} \, | \,n \in \mathbb{N} \}$ such that $\forall i \, . \, 0 \leq i \leq n+1 \Longrightarrow \eta_n \circ d_i^{n+1} = e_i^{n+1} \circ \eta_{n+1}$
+
+\end{definition}
+
+$$
+\xymatrix{
+\ldots \ar@<3ex>[r]|{d_3^3}  \ar@<1 ex>[r]|{d_2^3}  \ar@<-1ex>[r]|{d_1^3}  \ar@<-3 ex>[r]|{d_0^3} &
+     X_2 \ar@<2ex>[r]|{d_2^2}  \ar[r]|{d_1^2} \ar@<-2 ex>[r]|{d_0^2} \ar[dd]^{\eta_2} &
+     X_1 \ar@<1ex>[r]|{d_1^1} \ar@<-1ex>[r]|{d_0^1} \ar[dd]^{\eta_1} &
+     X_0 \ar[dd]^{\eta_0} \\
+\ldots     \\
+  \ldots \ar@<3ex>[r]|{e_3^3}  \ar@<1 ex>[r]|{e_2^3}  \ar@<-1ex>[r]|{d_1^3}  \ar@<-3 ex>[r]|{e_0^3} &
+     Y_2 \ar@<2ex>[r]|{e_2^2}  \ar[r]|{e_1^2} \ar@<-2 ex>[r]|{e_0^2} &
+     Y_1 \ar@<1ex>[r]|{e_1^1} \ar@<-1ex>[r]|{e_0^1} &
+     Y_0
+}
+$$
+
+\begin{definition}[\textbf{Index category $\Delta_{>}$ for semi-simplicial sets}]
+The index category $\Delta_{>}$ is defined by
+\begin{description}
+\item [objects] The finite non-empty sets ${0,1, \ldots , n}$ for $n \geq 0$.
+\item [arrows] Strictly increasing functions \onearrow{m}{f}{n}.
+\end{description}
+Let $\Delta_{>}^{\text{op}}$ denote the opposite category of $\Delta_{>}$.
+\end{definition}
+
+\begin{remark}
+There are two strictly increasing maps from $\{0\}$ to $\{0, 1\}$, namely $0 \mapsto 0$ and $0 \mapsto 1$. There are three strictly increasing maps from $\{0, 1\}$ to $\{0, 1, 2\}$, they are $\{ 0 \mapsto 0, 1 \mapsto 1\}$, $\{ 0 \mapsto 0, 1 \mapsto 2\}$ and $\{ 0 \mapsto 1, 1 \mapsto 2\}$. In general there are $n+1$ possible maps from $\{0, \ldots n-1\}$ to $\{0, \ldots n \}$, based on skipping one of the elements in $\{0, \ldots n \}$. We can call these maps $\lambda^n_i$, where $i$ is the number skipped. Therefore we can diagram $\Delta_{>}^{\text{op}}$ as
+$$
+\xymatrix{
+\ldots \ar@<2.1ex>[r]  \ar@<0.7 ex>[r]  \ar@<-0.7ex>[r]  \ar@<-2.1 ex>[r] &
+     2 \ar@<1.2ex>[r]  \ar[r] \ar@<-1.2 ex>[r] &
+     1 \ar@<0.6ex>[r] \ar@<-0.6ex>[r] &
+     0
+}
+$$
+\end{remark}
+
+\begin{proposition}[\textbf{Category \calS of semi simplicial sets}]
+$\calS = \mathbf{Sets}^{\Delta_{>}^{\text{op}}} = \Delta_{>}^{\text{op}} \rightarrow \mathbf{Sets}$. Let $F \in \calS$,
+so that \onearrow{ \Delta_{>}^{\text{op}}}{F}{\mathbf{Sets}}, and also let Let $F' \in \calS$,
+so that \onearrow{ \Delta_{>}^{\text{op}}}{F'}{\mathbf{Sets}}.
+Based on the shape of the category $\Delta_{>}^{\text{op}}$ shown in the previous remark we see that a natural transformation \onearrow{F}{\eta}{F'} produces the information for a morphism between semi-simplicial sets.
+For example, $F(\{0,1,2\}) = X_2$ and $F'(\{0,1,2\}) = Y_2$ and $F(\lambda^2_1) = d^2_1$ and $F'(\lambda^2_1) = e^2_1$, therefore the naturality of $\eta$ imposes that $\eta_1 \circ  d^2_1 = e^2_1 \circ \eta_2$.
+And in general, naturality of $\eta$ imposes $\eta_n \circ  d^n_i = e^n_i \circ \eta_{n+1}$
+which returns the definition of a morphism of semi-simplicial sets.
+\end{proposition}
+
+%%----------------------------------------------------------------------------------------------------------
+\subsection{Simplicial Sets}
+
+\begin{definition}[\textbf{Index category $\Delta_{>}$ for Simplicial sets}]
+The index category $\Delta_{\geq}$ is defined by
+\begin{description}
+\item [objects] The finite non-empty sets ${0,1, \ldots , n}$ for $n \geq 0$.
+\item [arrows] Non-decreasing functions \onearrow{m}{f}{n}.
+\end{description}
+Let $\Delta_{\geq}^{\text{op}}$ denote the opposite category of $\Delta_{\geq}$.
+\end{definition}
+
+\begin{definition}[\textbf{Category \calS of simplicial sets}]
+The category of simplicial sets is $\mathbf{Sets}^{\Delta_{\geq}^{\text{op}}} = \Delta_{\geq}^{\text{op}} \rightarrow \mathbf{Sets}$.
+\end{definition}
+
+\begin{remark}[Semi-simplicial and simplicial sets]
+The big difference between \emph{simplicial} and \emph{semi-simplicial} sets is the existence of non-injective morphisms in $\Delta_{\geq}$. This permits representing simplices (triangles) that are \emph{degenerate}. A degenerate $n$-simplex has been flattened to one of its $n-k$ dimensional faces.
+\end{remark}
+
+%%----------------------------------------------------------------------------------------------------------
+\subsection{\textbf{Graphs vs Hypergraphs}}
+
+The category of graphs is $\calG = \mathbf{Sets}^{\Delta_G^{\text{op}}} =  \Delta_G^{\text{op}} \rightarrow \mathbf{Sets}$, while the category of hypergraphs is
+$\calH = \mathbf{Sets}^{\Delta_H^{\text{op}}} = \Delta_H^{\text{op}} \rightarrow \mathbf{Sets}$.
+$$
+\xymatrix{
+V \ar@{|->}[d]_{\top} & E_2 \ar@{|->}[d]_{\top} &\Delta_G \ar[d]_{\top} & \calG \ar@/^1pc/[d]|{L_i} \\
+V                                 & E_2                                  & \Delta_H                       & \calH \ar@/^1pc/[u]|{R_i}
+}
+$$
+$R_i$ takes a graph to itself. $L_i$ forgets everything except vertices and 2-edges.
+
+%%----------------------------------------------------------------------------------------------------------
+\subsection{Hypergraph vs. Simplicial Sets}
+Graphs, hypergraphs, semi-simplicial sets and simplicial sets are all categories of functors from some index category to $\mathbf{Sets}$. Construct a functor \onearrow{\Delta_H}{a}{\Delta_{\leq}} as follows:
+\begin{description}
+\item [objects] \mapto{V}{[0]} and \mapto{E_n}{[n-1]}
+\item [arrows] For each $1 \leq i \leq n$ map the morphism \onearrow{V}{v_i^n}{E_n} to the morphism (denoted \mapto{0}{i-1})which is defined by \maptob{\mapto{0}{i-1}}{[0]}{[n-1]}.
+\end{description}
+Construct the opposite functor \onearrow{\Delta_H^{\text{op}}}{A}{\Delta_{\leq}^{\text{op}}}
+$\xymatrix{
+\calH \ar@<0.8ex>[r]|{L_A} & \mathbf{Sets} \ar@<0.8ex>[l]|{R_A}
+}$.
+The functor $R_A$ forgets all relationships between $n$-simplices and $m$-simplices unless $m = 0$. The functor $L_A$ takes a hypergraph $H$ and sends it to a simplicial set with 0-simplices that are the vertices of $H$ and with $n$-simplices that are the $n+1$ edges of $H$.
+
+\section{Category of Higher Graphs}
+
+\begin{definition}[\textbf{Basic indexing category for higher graphs}]
+Define the category $\Delta_B$ as follows
+\begin{description}
+\item [objects] $V$ and $E_n$ for $ n \geq 2$.
+\item [morphisms] \onearrow{V}{V_i^n}{E_n} for every $1 \leq i \leq n$.
+\end{description}
+\end{definition}
+
+\begin{definition}[\textbf{Indexing category for higher graphs}]
+A pair $(\calI, \onearrow{\Delta_B}{F}{\calI})$ where \calI is a category and $F$ is a functor. When $F$ is faithful, the category is called a \emph{faithful} indexing category for higher graphs.
+\end{definition}
+
+\begin{remark}
+An indexing category is a category that has a reasonable interpretation as vertices and $n$-edges. When $F$ is a faithful functor the $n$ vertices of an $n$-edge are distinct. $\Delta_H$, $\Delta_{\>}$, and
+$\Delta_{\geq}$ are faithful indexing categories for higher graphs. $\Delta_G$ is an indexing category for higher graphs, but not a faithful indexing category for higher graphs, thus graphs are not a faithful representation of higher graphs.
+\end{remark}
+
+\begin{definition}[\textbf{Category of Higher Sets}]
+\end{definition}
+
+\end{document}
+

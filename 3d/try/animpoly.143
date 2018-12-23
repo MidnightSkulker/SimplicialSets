@@ -1,0 +1,661 @@
+%!PS
+%%BoundingBox: -102 -100 65 458 
+%%HiResBoundingBox: -101.77899 -99.77007 64.16498 457.87218 
+%%Creator: MetaPost 1.208
+%%CreationDate: 2010.08.23:1411
+%%Pages: 1
+%%BeginProlog
+%%EndProlog
+%%Page: 1 1
+ 1 0.05882 0.63138 setrgbcolor
+newpath 15.74434 -6.5208 moveto
+-13.30635 7.76852 lineto
+-47.71358 23.60426 lineto
+-43.11154 20.48074 lineto
+0.00723 0.00414 lineto
+ closepath fill
+ 1 1 1 setrgbcolor 0 0.99626 dtransform truncate idtransform setlinewidth pop
+ [] 0 setdash 1 setlinejoin 10 setmiterlimit
+newpath 15.74434 -6.5208 moveto
+-13.30635 7.76852 lineto
+-47.71358 23.60426 lineto
+-43.11154 20.48074 lineto
+0.00723 0.00414 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath 15.74434 -6.5208 moveto
+-13.30635 7.76852 lineto
+-47.71358 23.60426 lineto
+-43.11154 20.48074 lineto
+0.00723 0.00414 lineto
+ closepath stroke
+ 0.70589 0 0 setrgbcolor
+newpath -78.6973 -10.0665 moveto
+-56.65166 -52.66907 lineto
+-6.11452 -45.2537 lineto
+0.00723 0.00414 lineto
+-43.11154 20.48074 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -78.6973 -10.0665 moveto
+-56.65166 -52.66907 lineto
+-6.11452 -45.2537 lineto
+0.00723 0.00414 lineto
+-43.11154 20.48074 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -78.6973 -10.0665 moveto
+-56.65166 -52.66907 lineto
+-6.11452 -45.2537 lineto
+0.00723 0.00414 lineto
+-43.11154 20.48074 lineto
+ closepath stroke
+ 0.70589 0.60785 0.28627 setrgbcolor
+newpath -80.77031 -0.61557 moveto
+-101.28085 -21.92067 lineto
+-78.6973 -10.0665 lineto
+-43.11154 20.48074 lineto
+-47.71358 23.60426 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -80.77031 -0.61557 moveto
+-101.28085 -21.92067 lineto
+-78.6973 -10.0665 lineto
+-43.11154 20.48074 lineto
+-47.71358 23.60426 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -80.77031 -0.61557 moveto
+-101.28085 -21.92067 lineto
+-78.6973 -10.0665 lineto
+-43.11154 20.48074 lineto
+-47.71358 23.60426 lineto
+ closepath stroke
+ 0.70589 0.99608 0.99608 setrgbcolor
+newpath -6.11452 -45.2537 moveto
+7.63185 -75.24013 lineto
+19.86945 -49.21565 lineto
+15.74434 -6.5208 lineto
+0.00723 0.00414 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -6.11452 -45.2537 moveto
+7.63185 -75.24013 lineto
+19.86945 -49.21565 lineto
+15.74434 -6.5208 lineto
+0.00723 0.00414 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -6.11452 -45.2537 moveto
+7.63185 -75.24013 lineto
+19.86945 -49.21565 lineto
+15.74434 -6.5208 lineto
+0.00723 0.00414 lineto
+ closepath stroke
+ 0.70589 0.99608 0.25098 setrgbcolor
+newpath -6.11452 -45.2537 moveto
+-56.65166 -52.66907 lineto
+-68.90509 -87.47308 lineto
+-29.42249 -99.27193 lineto
+7.63185 -75.24013 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -6.11452 -45.2537 moveto
+-56.65166 -52.66907 lineto
+-68.90509 -87.47308 lineto
+-29.42249 -99.27193 lineto
+7.63185 -75.24013 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -6.11452 -45.2537 moveto
+-56.65166 -52.66907 lineto
+-68.90509 -87.47308 lineto
+-29.42249 -99.27193 lineto
+7.63185 -75.24013 lineto
+ closepath stroke
+ 0.27058 0.81569 0.25098 setrgbcolor
+newpath -78.6973 -10.0665 moveto
+-101.28085 -21.92067 lineto
+-95.31769 -66.46474 lineto
+-68.90509 -87.47308 lineto
+-56.65166 -52.66907 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -78.6973 -10.0665 moveto
+-101.28085 -21.92067 lineto
+-95.31769 -66.46474 lineto
+-68.90509 -87.47308 lineto
+-56.65166 -52.66907 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -78.6973 -10.0665 moveto
+-101.28085 -21.92067 lineto
+-95.31769 -66.46474 lineto
+-68.90509 -87.47308 lineto
+-56.65166 -52.66907 lineto
+ closepath stroke
+ 1 0.05882 0.63138 setrgbcolor
+newpath 15.74434 -6.5208 moveto
+-13.30635 7.76852 lineto
+-47.71358 23.60426 lineto
+-43.11154 20.48074 lineto
+0.00723 0.00414 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath 15.74434 -6.5208 moveto
+-13.30635 7.76852 lineto
+-47.71358 23.60426 lineto
+-43.11154 20.48074 lineto
+0.00723 0.00414 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath 15.74434 -6.5208 moveto
+-13.30635 7.76852 lineto
+-47.71358 23.60426 lineto
+-43.11154 20.48074 lineto
+0.00723 0.00414 lineto
+ closepath stroke
+ 0.70589 0 0 setrgbcolor
+newpath -78.6973 -10.0665 moveto
+-56.65166 -52.66907 lineto
+-6.11452 -45.2537 lineto
+0.00723 0.00414 lineto
+-43.11154 20.48074 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -78.6973 -10.0665 moveto
+-56.65166 -52.66907 lineto
+-6.11452 -45.2537 lineto
+0.00723 0.00414 lineto
+-43.11154 20.48074 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -78.6973 -10.0665 moveto
+-56.65166 -52.66907 lineto
+-6.11452 -45.2537 lineto
+0.00723 0.00414 lineto
+-43.11154 20.48074 lineto
+ closepath stroke
+ 0.70589 0.60785 0.28627 setrgbcolor
+newpath -80.77031 -0.61557 moveto
+-101.28085 -21.92067 lineto
+-78.6973 -10.0665 lineto
+-43.11154 20.48074 lineto
+-47.71358 23.60426 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -80.77031 -0.61557 moveto
+-101.28085 -21.92067 lineto
+-78.6973 -10.0665 lineto
+-43.11154 20.48074 lineto
+-47.71358 23.60426 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -80.77031 -0.61557 moveto
+-101.28085 -21.92067 lineto
+-78.6973 -10.0665 lineto
+-43.11154 20.48074 lineto
+-47.71358 23.60426 lineto
+ closepath stroke
+ 0.70589 0.99608 0.99608 setrgbcolor
+newpath -6.11452 -45.2537 moveto
+7.63185 -75.24013 lineto
+19.86945 -49.21565 lineto
+15.74434 -6.5208 lineto
+0.00723 0.00414 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -6.11452 -45.2537 moveto
+7.63185 -75.24013 lineto
+19.86945 -49.21565 lineto
+15.74434 -6.5208 lineto
+0.00723 0.00414 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -6.11452 -45.2537 moveto
+7.63185 -75.24013 lineto
+19.86945 -49.21565 lineto
+15.74434 -6.5208 lineto
+0.00723 0.00414 lineto
+ closepath stroke
+ 0.70589 0.99608 0.25098 setrgbcolor
+newpath -6.11452 -45.2537 moveto
+-56.65166 -52.66907 lineto
+-68.90509 -87.47308 lineto
+-29.42249 -99.27193 lineto
+7.63185 -75.24013 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -6.11452 -45.2537 moveto
+-56.65166 -52.66907 lineto
+-68.90509 -87.47308 lineto
+-29.42249 -99.27193 lineto
+7.63185 -75.24013 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -6.11452 -45.2537 moveto
+-56.65166 -52.66907 lineto
+-68.90509 -87.47308 lineto
+-29.42249 -99.27193 lineto
+7.63185 -75.24013 lineto
+ closepath stroke
+ 0.27058 0.81569 0.25098 setrgbcolor
+newpath -78.6973 -10.0665 moveto
+-101.28085 -21.92067 lineto
+-95.31769 -66.46474 lineto
+-68.90509 -87.47308 lineto
+-56.65166 -52.66907 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -78.6973 -10.0665 moveto
+-101.28085 -21.92067 lineto
+-95.31769 -66.46474 lineto
+-68.90509 -87.47308 lineto
+-56.65166 -52.66907 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -78.6973 -10.0665 moveto
+-101.28085 -21.92067 lineto
+-95.31769 -66.46474 lineto
+-68.90509 -87.47308 lineto
+-56.65166 -52.66907 lineto
+ closepath stroke
+ 0.70589 0.78432 0.99608 setrgbcolor
+newpath 34.6585 431.80733 moveto
+-14.632 452.8232 lineto
+44.59186 361.61497 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath 34.6585 431.80733 moveto
+-14.632 452.8232 lineto
+44.59186 361.61497 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath 34.6585 431.80733 moveto
+-14.632 452.8232 lineto
+44.59186 361.61497 lineto
+ closepath stroke
+ 0.70589 0.99608 0.99608 setrgbcolor
+newpath -14.632 452.8232 moveto
+-35.3137 341.08736 lineto
+44.59186 361.61497 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -14.632 452.8232 moveto
+-35.3137 341.08736 lineto
+44.59186 361.61497 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -14.632 452.8232 moveto
+-35.3137 341.08736 lineto
+44.59186 361.61497 lineto
+ closepath stroke
+ 0.70589 0.99608 0.25098 setrgbcolor
+newpath -14.632 452.8232 moveto
+-93.614 403.10168 lineto
+-35.3137 341.08736 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -14.632 452.8232 moveto
+-93.614 403.10168 lineto
+-35.3137 341.08736 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -14.632 452.8232 moveto
+-93.614 403.10168 lineto
+-35.3137 341.08736 lineto
+ closepath stroke
+ 0.27058 0.81569 0.25098 setrgbcolor
+newpath -14.632 452.8232 moveto
+-47.31439 457.37404 lineto
+-93.614 403.10168 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -14.632 452.8232 moveto
+-47.31439 457.37404 lineto
+-93.614 403.10168 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -14.632 452.8232 moveto
+-47.31439 457.37404 lineto
+-93.614 403.10168 lineto
+ closepath stroke
+ 0.70589 0.99608 0.99608 setrgbcolor
+newpath 38.364 331.64287 moveto
+44.59186 361.61497 lineto
+1.80693 280.28706 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath 38.364 331.64287 moveto
+44.59186 361.61497 lineto
+1.80693 280.28706 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath 38.364 331.64287 moveto
+44.59186 361.61497 lineto
+1.80693 280.28706 lineto
+ closepath stroke
+ 0.70589 0.60785 0.75294 setrgbcolor
+newpath 44.59186 361.61497 moveto
+-35.3137 341.08736 lineto
+1.80693 280.28706 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath 44.59186 361.61497 moveto
+-35.3137 341.08736 lineto
+1.80693 280.28706 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath 44.59186 361.61497 moveto
+-35.3137 341.08736 lineto
+1.80693 280.28706 lineto
+ closepath stroke
+ 0.27058 0.63138 0.07843 setrgbcolor
+newpath -35.3137 341.08736 moveto
+-93.614 403.10168 lineto
+-73.07759 301.56479 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -35.3137 341.08736 moveto
+-93.614 403.10168 lineto
+-73.07759 301.56479 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -35.3137 341.08736 moveto
+-93.614 403.10168 lineto
+-73.07759 301.56479 lineto
+ closepath stroke
+ 0.70589 0 0 setrgbcolor
+newpath -35.3137 341.08736 moveto
+-73.07759 301.56479 lineto
+1.80693 280.28706 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -35.3137 341.08736 moveto
+-73.07759 301.56479 lineto
+1.80693 280.28706 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -35.3137 341.08736 moveto
+-73.07759 301.56479 lineto
+1.80693 280.28706 lineto
+ closepath stroke
+ 0.70589 0.78432 0.99608 setrgbcolor
+newpath 34.6585 431.80733 moveto
+-14.632 452.8232 lineto
+44.59186 361.61497 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath 34.6585 431.80733 moveto
+-14.632 452.8232 lineto
+44.59186 361.61497 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath 34.6585 431.80733 moveto
+-14.632 452.8232 lineto
+44.59186 361.61497 lineto
+ closepath stroke
+ 0.70589 0.99608 0.99608 setrgbcolor
+newpath -14.632 452.8232 moveto
+-35.3137 341.08736 lineto
+44.59186 361.61497 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -14.632 452.8232 moveto
+-35.3137 341.08736 lineto
+44.59186 361.61497 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -14.632 452.8232 moveto
+-35.3137 341.08736 lineto
+44.59186 361.61497 lineto
+ closepath stroke
+ 0.70589 0.99608 0.25098 setrgbcolor
+newpath -14.632 452.8232 moveto
+-93.614 403.10168 lineto
+-35.3137 341.08736 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -14.632 452.8232 moveto
+-93.614 403.10168 lineto
+-35.3137 341.08736 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -14.632 452.8232 moveto
+-93.614 403.10168 lineto
+-35.3137 341.08736 lineto
+ closepath stroke
+ 0.27058 0.81569 0.25098 setrgbcolor
+newpath -14.632 452.8232 moveto
+-47.31439 457.37404 lineto
+-93.614 403.10168 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -14.632 452.8232 moveto
+-47.31439 457.37404 lineto
+-93.614 403.10168 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -14.632 452.8232 moveto
+-47.31439 457.37404 lineto
+-93.614 403.10168 lineto
+ closepath stroke
+ 0.70589 0.99608 0.99608 setrgbcolor
+newpath 38.364 331.64287 moveto
+44.59186 361.61497 lineto
+1.80693 280.28706 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath 38.364 331.64287 moveto
+44.59186 361.61497 lineto
+1.80693 280.28706 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath 38.364 331.64287 moveto
+44.59186 361.61497 lineto
+1.80693 280.28706 lineto
+ closepath stroke
+ 0.70589 0.60785 0.75294 setrgbcolor
+newpath 44.59186 361.61497 moveto
+-35.3137 341.08736 lineto
+1.80693 280.28706 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath 44.59186 361.61497 moveto
+-35.3137 341.08736 lineto
+1.80693 280.28706 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath 44.59186 361.61497 moveto
+-35.3137 341.08736 lineto
+1.80693 280.28706 lineto
+ closepath stroke
+ 0.27058 0.63138 0.07843 setrgbcolor
+newpath -35.3137 341.08736 moveto
+-93.614 403.10168 lineto
+-73.07759 301.56479 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -35.3137 341.08736 moveto
+-93.614 403.10168 lineto
+-73.07759 301.56479 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -35.3137 341.08736 moveto
+-93.614 403.10168 lineto
+-73.07759 301.56479 lineto
+ closepath stroke
+ 0.70589 0 0 setrgbcolor
+newpath -35.3137 341.08736 moveto
+-73.07759 301.56479 lineto
+1.80693 280.28706 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -35.3137 341.08736 moveto
+-73.07759 301.56479 lineto
+1.80693 280.28706 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -35.3137 341.08736 moveto
+-73.07759 301.56479 lineto
+1.80693 280.28706 lineto
+ closepath stroke
+ 0.70589 0.99608 0.99608 setrgbcolor
+newpath -12.33524 205.40855 moveto
+14.04655 214.39879 lineto
+25.29955 250.92873 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -12.33524 205.40855 moveto
+14.04655 214.39879 lineto
+25.29955 250.92873 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -12.33524 205.40855 moveto
+14.04655 214.39879 lineto
+25.29955 250.92873 lineto
+ closepath stroke
+ 0.27058 0.81569 0.25098 setrgbcolor
+newpath 14.04655 214.39879 moveto
+63.66684 209.48041 lineto
+25.29955 250.92873 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath 14.04655 214.39879 moveto
+63.66684 209.48041 lineto
+25.29955 250.92873 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath 14.04655 214.39879 moveto
+63.66684 209.48041 lineto
+25.29955 250.92873 lineto
+ closepath stroke
+ 0.70589 0.78432 0.99608 setrgbcolor
+newpath 24.15662 165.81781 moveto
+14.04655 214.39879 lineto
+-12.33524 205.40855 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath 24.15662 165.81781 moveto
+14.04655 214.39879 lineto
+-12.33524 205.40855 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath 24.15662 165.81781 moveto
+14.04655 214.39879 lineto
+-12.33524 205.40855 lineto
+ closepath stroke
+ 0.70589 0.60785 0.28627 setrgbcolor
+newpath 24.15662 165.81781 moveto
+63.66684 209.48041 lineto
+14.04655 214.39879 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath 24.15662 165.81781 moveto
+63.66684 209.48041 lineto
+14.04655 214.39879 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath 24.15662 165.81781 moveto
+63.66684 209.48041 lineto
+14.04655 214.39879 lineto
+ closepath stroke
+ 0.70589 0.99608 0.99608 setrgbcolor
+newpath -12.33524 205.40855 moveto
+14.04655 214.39879 lineto
+25.29955 250.92873 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath -12.33524 205.40855 moveto
+14.04655 214.39879 lineto
+25.29955 250.92873 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath -12.33524 205.40855 moveto
+14.04655 214.39879 lineto
+25.29955 250.92873 lineto
+ closepath stroke
+ 0.27058 0.81569 0.25098 setrgbcolor
+newpath 14.04655 214.39879 moveto
+63.66684 209.48041 lineto
+25.29955 250.92873 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath 14.04655 214.39879 moveto
+63.66684 209.48041 lineto
+25.29955 250.92873 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath 14.04655 214.39879 moveto
+63.66684 209.48041 lineto
+25.29955 250.92873 lineto
+ closepath stroke
+ 0.70589 0.78432 0.99608 setrgbcolor
+newpath 24.15662 165.81781 moveto
+14.04655 214.39879 lineto
+-12.33524 205.40855 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath 24.15662 165.81781 moveto
+14.04655 214.39879 lineto
+-12.33524 205.40855 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath 24.15662 165.81781 moveto
+14.04655 214.39879 lineto
+-12.33524 205.40855 lineto
+ closepath stroke
+ 0.70589 0.60785 0.28627 setrgbcolor
+newpath 24.15662 165.81781 moveto
+63.66684 209.48041 lineto
+14.04655 214.39879 lineto
+ closepath fill
+ 1 1 1 setrgbcolor
+newpath 24.15662 165.81781 moveto
+63.66684 209.48041 lineto
+14.04655 214.39879 lineto
+ closepath stroke
+ 0 0 0 setrgbcolor
+newpath 24.15662 165.81781 moveto
+63.66684 209.48041 lineto
+14.04655 214.39879 lineto
+ closepath stroke
+newpath 2.4979 0.00414 moveto
+2.4979 0.6647 2.23547 1.2982 1.76839 1.76529 curveto
+1.3013 2.23238 0.6678 2.4948 0.00723 2.4948 curveto
+-0.65334 2.4948 -1.28683 2.23238 -1.75392 1.76529 curveto
+-2.22101 1.2982 -2.48343 0.6647 -2.48343 0.00414 curveto
+-2.48343 -0.65643 -2.22101 -1.28993 -1.75392 -1.75702 curveto
+-1.28683 -2.2241 -0.65334 -2.48653 0.00723 -2.48653 curveto
+0.6678 -2.48653 1.3013 -2.2241 1.76839 -1.75702 curveto
+2.23547 -1.28993 2.4979 -0.65643 2.4979 0.00414 curveto closepath fill
+ 1 0 0 setrgbcolor 0 0.3985 dtransform truncate idtransform setlinewidth pop
+ [3 3 ] 0 setdash 1 setlinecap
+newpath -18.14339 58.89465 moveto
+13.37158 49.55931 lineto stroke
+ [] 0 setdash
+newpath 9.39325 49.14116 moveto
+13.37158 49.55931 lineto
+10.26285 52.0768 lineto
+ closepath
+gsave fill grestore stroke
+ 0 1 0 setrgbcolor [3 3 ] 0 setdash
+newpath -18.14339 58.89465 moveto
+36.9314 62.90364 lineto stroke
+ [] 0 setdash
+newpath 33.35693 61.10869 moveto
+36.9314 62.90364 lineto
+33.13467 64.162 lineto
+ closepath
+gsave fill grestore stroke
+ 0 0 1 setrgbcolor [3 3 ] 0 setdash
+newpath -18.14339 58.89465 moveto
+-18.86401 126.07738 lineto stroke
+ [] 0 setdash
+newpath -17.29361 122.39827 moveto
+-18.86401 126.07738 lineto
+-20.35516 122.36543 lineto
+ closepath
+gsave fill grestore stroke
+showpage
+%%EOF

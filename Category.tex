@@ -1,0 +1,71 @@
+\documentclass[10pt]{article}
+
+
+\newcommand{\onearrow}[3]{\mbox{$#1 \stackrel{#2}{\longrightarrow} #3$}}
+\newcommand{\calB}{\mbox{${\cal B}\ $}}
+\newcommand{\calC}{\mbox{${\cal C}\ $}}
+\newcommand{\calD}{\mbox{${\cal D}\ $}}
+\newcommand{\calG}{\mbox{${\cal G}\ $}}
+\newcommand{\calH}{\mbox{${\cal H}\ $}}
+\newcommand{\calI}{\mbox{${\cal I}\ $}}
+\newcommand{\calM}{\mbox{${\cal M}\ $}}
+\newcommand{\calO}{\mbox{${\cal O}\ $}}
+\newcommand{\calS}{\mbox{${\cal S}\ $}}
+\newcommand{\begrem}[1]{\begin{remark}[#1]}\newcommand{\functor}[3]{\mbox{${\cal #1} \stackrel{#2}{\rightarrow}{\cal #3}$}}
+\newcommand{\mapto}[2]{\mbox{$#1 \mapsto #2$}}
+\newcommand{\maptob}[3]{\mbox{$#1: #2 \mapsto #3$}}
+\newcommand{\begdef}[1]{\begin{definition}[\textbf{#1}]}
+\newcommand{\edefi}{\ $\clubsuit$\end{definition}}
+
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsmath,amscd}
+\usepackage[all,cmtip]{xy}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{example}{Example}
+
+\begin{document}
+
+\section{Set Theory}
+
+\begin{definition}{$\mathbb{P}_{+} (S)$}
+$$
+\mathbb{P}_{+} (S) = \{ A \subseteq S \, | \, A \neq \emptyset \}
+$$
+\end{definition}
+
+\begin{definition}[\textbf{Ordered power set} ($\mathbb{O}_+(S)$)]
+$$
+\mathbb{O}_+(S) = \coprod_{n \geq 1} S^{n}
+$$
+\end{definition}
+
+\section{Categories}
+
+\begdef{Category}A \emph{Category} is an ordered quintupleø${\calC} = \langle {\calO},{\calM}, dom, cod, \circ \rangle $where\begin{description}\item	[objects] ${\calO} = Ob({\calC})$ is a class of \emph{objects}\item [arrows] ${\calM} = Hom({\calC})$ is a class of ${\calC}$-arrows,\item	[domain function] \onearrow{\calM}{\text{dom}}{\calO} is a function that	determines the \emph{domain} of each arrow of the category \calC,\item	[codomain function] \onearrow{\calM}{\text{cod}}{\calO} is a function that	determines the \emph{codomain} (also called the \emph{range})	of each arrow of the category \calC, and\item [composition] \emph{Composition} is a function \onearrow{\calD}{\circ}{\calM} where	$$	{\calD}= \{ \langle \alpha, \beta \rangle \mid \alpha, \beta \in{\calM}	\ \textstyle{and}\ 	\text{dom}(\alpha) = \text{cod}(\beta)\}.	$$	This function is called {\em composition} and we write	$\alpha \circ \beta$ for $\circ ( \alpha, \beta)$.	\begin{description}	\item	[Matching] Whenever $\alpha \circ \beta$ is defined we have
+	                  $dom(\alpha \circ \beta) = dom(\beta)$ and $cod ( \alpha \circ \beta ) = cod ( \alpha ) $.	\item	[Associativity]			$(\alpha \circ \beta) \circ \gamma = \alpha \circ (\beta \circ \gamma) $			whenever both sides are defined.	\item	[Identity] For every \calC-object $a$ there exists a \calC-arrow $1_a$ such that:			\begin{itemize}			 \item Whenever $\alpha \circ 1_a$ is defined (i.e. whenever $\text{dom}( \alpha ) = a$) we have				$\alpha \circ 1_a = \alpha$,		 	\item	Whenever $1_a \circ \beta$ is defined (i.e. whenever				$\text{cod} (\beta)=a$) we have $1_a \circ \beta = \beta$.			\end{itemize}	\end{description}\end{description}The composition function is required to satisfy the following axioms:The domain of an arrow is also called the \emph{source} of the arrow.The codomain of an arrow is also called the \emph{sink} of the arrow.If the sets \calO and \calM are finite, then \calC may be called a {\emph finite category}.\edefi
+
+\begrem{Defining a category}In order to define a category one must define the \emph{objects} ofthe category, the \emph{arrows} of the category, and the composition law in the category.One must then show that the \emph{associativity} and \emph{identity} laws are satisfied.The \emph{matching} condition is normally self evident.\end{remark}
+
+\section{Hom Functors}
+
+\begin{definition}[\textbf{contravariant} $\hom$-\textbf{functor} $\hom(-,b)$]
+Let \calC and \calD be categories. Define the \emph{contravariant} $\hom$ \emph{functor} \onearrow{\calC}{\hom(-,b)}{\mathbf{Set}} as follows
+$$
+\xymatrix{
+a \ar[d]_{g} & \hom(a,b) & f \circ g \ar@{(->}[l] \\
+a'   		  & \hom(a',b) \ar[u]|{g^* = \hom(g,b)} & f \ar@{(->}[l] \ar[u]_{g^*}
+}
+$$
+\begin{description}
+\item [objects] \maptob{\hom(-,b)}{a}{\hom(a,b)}, i.e. the object $a$ is mapped to the \emph{set} of morphisms from $a$ to $b$.
+\item [arrows] \maptob{\hom(-,b)}{\onearrow{a}{g}{a'}}{g^* = \hom(g,b)}, i.e. the function $g$ is mapped to the function $g^*$ defined by \maptob{g^*}{f}{f \circ g}.
+\end{description}
+\end{definition}
+
+
+
+\end{document}

@@ -1,0 +1,47 @@
+This is MetaPost, version 1.208 (kpathsea version 5.0.0) (mem=mpost 2009.11.07)  23 AUG 2010 17:58
+**try
+(./try.mp (./3d.mp
+*** 3d,          v1.34 (c) D. Roegel, 17 August 2003 *** (./3dgeom.mp (./3d.mp)
+(./3dutil.mp
+*** 3dutil,   v1.34 (c) D. Roegel 17 August 2003 ***)
+*** 3dgeom,   v1.34 (c) D. Roegel 17 August 2003 ***)) (./3dpoly.mp
+*** 3dpoly,      v1.34 (c) D. Roegel, 17 August 2003 ***)
+>> rd-0.7071
+! Not implemented: length(unknown numeric).
+<to be read again> 
+                   ,
+<argument> new_vec(v_a);m_=max(abs(xval((27))),
+                                               abs(yval((27))),abs(zval((27)...
+
+hide->exitif.numeric.begingroup(TEXT0)
+                                      ;endgroup;
+vec_mod_->...(vec_dprod_(v_a,v_a));free_vec(v_a);)
+                                                  prod.endgroup
+point_of_view_abs->...ult_(v_a,v_a,1/vec_mod_(v_a)
+                                                  );psi=angle((vec[v_a]x,vec...
+
+point_of_view_obj->...ew_abs(pnt((EXPR3)),(EXPR4))
+                                                  ;endgroup
+l.22   point_of_view_obj("obja",1,Obs_phi)
+                                          ;% fix point 1 of object |name_a|
+? 
+! Emergency stop.
+<to be read again> 
+                   ,
+<argument> new_vec(v_a);m_=max(abs(xval((27))),
+                                               abs(yval((27))),abs(zval((27)...
+
+hide->exitif.numeric.begingroup(TEXT0)
+                                      ;endgroup;
+vec_mod_->...(vec_dprod_(v_a,v_a));free_vec(v_a);)
+                                                  prod.endgroup
+point_of_view_abs->...ult_(v_a,v_a,1/vec_mod_(v_a)
+                                                  );psi=angle((vec[v_a]x,vec...
+
+point_of_view_obj->...ew_abs(pnt((EXPR3)),(EXPR4))
+                                                  ;endgroup
+l.22   point_of_view_obj("obja",1,Obs_phi)
+                                          ;% fix point 1 of object |name_a|
+End of file on the terminal!
+
+
